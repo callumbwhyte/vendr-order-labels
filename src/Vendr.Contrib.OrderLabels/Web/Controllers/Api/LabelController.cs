@@ -86,7 +86,18 @@ namespace Vendr.Contrib.OrderLabels.Web.Controllers.Api
 
             try
             {
-                var files = generator.Generate(orders);
+                var files = generator.Generate(orders).ToList();
+
+                if (files.Count > 1)
+                {
+                    var zipName = alias + ".zip";
+
+                    var zipFiles = files.ToDictionary(x => x.Name, x => x.Content);
+
+                    var zipResponse = Request.CreateZipResponse(zipName, zipFiles);
+
+                    return ResponseMessage(zipResponse);
+                }
 
                 var file = files.FirstOrDefault();
 

@@ -16,6 +16,9 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Web\UI\App_Plugins\Vendr.OrderLabels\label.actions.js" />
     <Content Include="Web\UI\App_Plugins\Vendr.OrderLabels\labelResource.service.js" />
     <Content Include="Web\UI\App_Plugins\Vendr.OrderLabels\package.manifest" />
