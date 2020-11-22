@@ -13,10 +13,16 @@
                             );
                         },
                         getLabel: function (alias, orderId) {
-                            return umbRequestHelper.downloadFile('/umbraco/backoffice/vendr/label/GetLabel?alias=' + alias + '&orderId=' + orderId);
+                            return umbRequestHelper.downloadFile('/umbraco/backoffice/vendr/label/GetLabel?alias=' + alias + '&orderId=' + orderId)
+                                .then(function () {
+                                    return {};
+                                });
                         },
                         getLabels: function (alias, orderIds) {
-                            return umbRequestHelper.downloadFile('/umbraco/backoffice/vendr/label/GetLabels?alias=' + alias + '&orderIds=' + orderIds);
+                            return umbRequestHelper.downloadFile('/umbraco/backoffice/vendr/label/GetLabels?alias=' + alias + '&orderIds=' + orderIds)
+                                .then(function () {
+                                    return {};
+                                });
                         }
                     }
                 }
