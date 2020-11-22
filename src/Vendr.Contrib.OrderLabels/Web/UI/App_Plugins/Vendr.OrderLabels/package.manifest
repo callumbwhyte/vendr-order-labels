@@ -1,0 +1,6 @@
+﻿{
+  "javascript": [
+    "/App_Plugins/Vendr.OrderLabels/label.actions.js",
+    "/App_Plugins/Vendr.OrderLabels/labelResource.service.js"
+  ]
+}

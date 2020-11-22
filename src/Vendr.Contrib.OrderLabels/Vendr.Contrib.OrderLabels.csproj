@@ -16,6 +16,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Web\UI\App_Plugins\Vendr.OrderLabels\label.actions.js" />
+    <Content Include="Web\UI\App_Plugins\Vendr.OrderLabels\labelResource.service.js" />
+    <Content Include="Web\UI\App_Plugins\Vendr.OrderLabels\package.manifest" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="UmbracoCms.Web" Version="8.1.0" />
     <PackageReference Include="Vendr.Core" Version="1.3.4" />
   </ItemGroup>
