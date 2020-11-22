@@ -15,4 +15,8 @@
     <RepositoryUrl>https://github.com/callumbwhyte/vendr-order-labels</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="UmbracoCms.Web" Version="8.1.0" />
+    <PackageReference Include="Vendr.Core" Version="1.3.4" />
+  </ItemGroup>
 </Project>
