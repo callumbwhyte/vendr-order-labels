@@ -9,7 +9,10 @@
                     return {
                         getGenerators: function () {
                             return umbRequestHelper.resourcePromise(
-                                $http.get('/umbraco/backoffice/vendr/label/GetGenerators')
+                                $http({
+                                    url: '/umbraco/backoffice/vendr/label/GetGenerators',
+                                    method: 'GET'
+                                })
                             );
                         },
                         getLabel: function (alias, orderId) {

@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Vendr.Contrib.OrderLabels.Models.Response
+namespace Vendr.Contrib.OrderLabels.Web.Models.Response
 {
     internal class LabelGeneratorResponse
     {

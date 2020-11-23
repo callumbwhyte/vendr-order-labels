@@ -7,7 +7,7 @@ using Umbraco.Web.Mvc;
 using Umbraco.Web.WebApi;
 using Vendr.Contrib.OrderLabels.Composing;
 using Vendr.Contrib.OrderLabels.Extensions;
-using Vendr.Contrib.OrderLabels.Models.Response;
+using Vendr.Contrib.OrderLabels.Web.Models.Response;
 using Vendr.Core;
 using Vendr.Core.Api;
 using Vendr.Core.Models;
